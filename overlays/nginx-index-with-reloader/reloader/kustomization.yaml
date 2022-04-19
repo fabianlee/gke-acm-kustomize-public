@@ -1,6 +1,0 @@
-
-
-resources:
-- ../../../base/reloader
-
-namespace: reloader
