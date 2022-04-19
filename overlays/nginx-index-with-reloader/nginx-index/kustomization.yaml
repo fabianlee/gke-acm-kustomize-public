@@ -1,0 +1,19 @@
+
+
+resources:
+- ../../../base/nginx-index-html
+
+namespace: nginx-index-reloader
+
+# add annotation that allows configmap reloading
+commonAnnotations:
+  configmap.reloader.stakater.com/reload: nginx-cm
+
+configMapGenerator:
+- name: nginx-cm
+  behavior: replace
+  files:
+  - cm-index.html
+
+generatorOptions:
+  disableNameSuffixHash: true
