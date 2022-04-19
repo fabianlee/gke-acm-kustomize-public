@@ -1,5 +1,5 @@
 # no namespaces allowed in rootsync
 
 resources:
-- .../../base/reloader/
+- ../../base/reloader
 
