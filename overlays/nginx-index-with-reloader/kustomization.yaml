@@ -1,4 +1,6 @@
+# includes base reloader and then customized nginx-index-html
 
 resources:
+- ../../base/reloader/
 - nginx-index/
 
